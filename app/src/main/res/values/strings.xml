@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">PaymentPage</string>
+    <string name="enter_pan">Enter CARD PAN</string>
+    <string name="expire_date">Expire Date</string>
+    <string name="security_code">Security Code</string>
+    <string name="select_moto">Select MOTO Type</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="stored_credentials">Stored Credentials</string>
+    <string name="card_stored">Card Stored on File?</string>
+    <string name="continue_hint">Continue</string>
+</resources>

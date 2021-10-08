@@ -7,9 +7,8 @@ import androidx.compose.ui.text.input.TransformedText
 import androidx.compose.ui.text.input.VisualTransformation
 
 
-class ExpiredDateVisualTransformation : VisualTransformation {
+class ExpireDateVisualTransformation : VisualTransformation {
     override fun filter(text: AnnotatedString): TransformedText {
-        // Make the string XXX-XXX-XXX
         val trimmed = if (text.text.length >= 4) text.text.substring(0..3) else text.text
         var output = ""
         for (i in trimmed.indices) {

@@ -30,7 +30,7 @@ import androidx.compose.ui.unit.sp
 import androidx.compose.ui.unit.toSize
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.wuhao.paymentpage.presentation.ExpiredDateVisualTransformation
-import com.wuhao.paymentpage.presentation.NumberVisualTransformation
+import com.wuhao.paymentpage.presentation.PANVisualTransformation
 import com.wuhao.paymentpage.presentation.PaymentViewModel
 
 @Composable
@@ -160,7 +160,7 @@ fun PaymentDetail(viewModel: PaymentViewModel = hiltViewModel()) {
                 fontSize = 20.sp,
                 textAlign = TextAlign.Center
             ),
-            visualTransformation = NumberVisualTransformation(),
+            visualTransformation = PANVisualTransformation(),
             keyboardOptions = KeyboardOptions.Default.copy(keyboardType = KeyboardType.Number),
             modifier = Modifier
                 .fillMaxWidth()
@@ -253,6 +253,7 @@ fun PaymentDetail(viewModel: PaymentViewModel = hiltViewModel()) {
 
 @Composable
 fun MotoType() {
+    //TODO  save the state in viewmodel
     var expanded by remember { mutableStateOf(false) }
     var storeOnFile by remember { mutableStateOf(true) }
     val suggestions = listOf("SINGLE MOTO", "RECURRING MOTO")

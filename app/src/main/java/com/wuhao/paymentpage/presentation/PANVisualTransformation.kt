@@ -5,7 +5,7 @@ import androidx.compose.ui.text.input.OffsetMapping
 import androidx.compose.ui.text.input.TransformedText
 import androidx.compose.ui.text.input.VisualTransformation
 
-class NumberVisualTransformation : VisualTransformation {
+class PANVisualTransformation : VisualTransformation {
     override fun filter(text: AnnotatedString): TransformedText {
 
         val trimmed = if (text.text.length >= 16) text.text.substring(0..15) else text.text

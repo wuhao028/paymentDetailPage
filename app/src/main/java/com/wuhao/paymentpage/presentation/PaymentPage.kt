@@ -29,7 +29,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.unit.toSize
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.wuhao.paymentpage.presentation.ExpiredDateVisualTransformation
+import com.wuhao.paymentpage.presentation.ExpireDateVisualTransformation
 import com.wuhao.paymentpage.presentation.PANVisualTransformation
 import com.wuhao.paymentpage.presentation.PaymentViewModel
 
@@ -199,7 +199,7 @@ fun PaymentDetail(viewModel: PaymentViewModel = hiltViewModel()) {
                     fontSize = 20.sp,
                     textAlign = TextAlign.Center
                 ),
-                visualTransformation = ExpiredDateVisualTransformation(),
+                visualTransformation = ExpireDateVisualTransformation(),
                 keyboardOptions = KeyboardOptions.Default.copy(keyboardType = KeyboardType.Number),
                 modifier = Modifier
                     .fillMaxWidth()
